@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.eibertek.greedybastardsgame;
 
 import android.support.multidex.MultiDexApplication;
 

@@ -30,6 +30,9 @@ build/
 local.properties
 *.iml
 
+android/app/google-services.json
+ios/RNFirebaseStarter/GoogleService-Info.plist
+
 # node.js
 #
 node_modules/
