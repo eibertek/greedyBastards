@@ -31,7 +31,7 @@ local.properties
 *.iml
 
 android/app/google-services.json
-ios/RNFirebaseStarter/GoogleService-Info.plist
+ios/greedybastardsgame/GoogleService-Info.plist
 
 # node.js
 #
