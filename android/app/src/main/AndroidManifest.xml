@@ -5,7 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
       android:name=".MainApplication"
       android:allowBackup="true"
@@ -13,6 +13,9 @@
       android:icon="@mipmap/ic_launcher"
       android:roundIcon="@mipmap/ic_launcher_round"
       android:theme="@style/AppTheme">
+      <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyC_HlIaLnhWjY9zww8yStbwZe8-4e1ommo"/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
