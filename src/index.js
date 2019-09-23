@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
 
-import firebase from 'react-native-firebase';
+import firebase from 'react-native-firebase/dist/index';
 
-export default class App extends React.Component {
+export default class Index extends React.Component {
   constructor() {
     super();
     this.state = {};
@@ -14,14 +14,14 @@ export default class App extends React.Component {
     // const { user } = await firebase.auth().signInAnonymously();
     // console.warn('User -> ', user.toJSON());
 
-    // await firebase.analytics().logEvent('foo', { bar: '123'});
+    await firebase.analytics().logEvent('openPage', { page: 'index'});
   }
 
   render() {
     return (
       <ScrollView>
         <View style={styles.container}>
-          <Image source={require('./assets/ReactNativeFirebase.png')} style={[styles.logo]}/>
+          <Image source={require('../assets/ReactNativeFirebase.png')} style={[styles.logo]}/>
           <Text style={styles.welcome}>
             Welcome to {'\n'} React Native Firebase
           </Text>
